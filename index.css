@@ -227,7 +227,7 @@ div.banner p {
   height: 4.0rem;
   background:  var(--primary-color);
   color:var(--letter-color);
-  width: 9.0rem;
+  padding: 0 2rem;
   font-weight: bold;
   font-size: 1.4rem;
   border-width: 0.1px;
@@ -262,7 +262,7 @@ div.banner p {
 /* bar--------------------------------------------*/
 
 div.bar {
-  height: 15rem;
+  height: 18rem;
   background: var(--secondary-color);
   box-shadow: 0 0.1rem 0.3rem rgba(0,0,0, 0.25);
   display: flex;
@@ -378,7 +378,6 @@ div.wrapper-content aside.profile img.avatar {
   height: 20rem;
   border-radius: 50%;
   border: 0.5rem solid #fff;
-  margin-top: -1rem;
 }
 
 div.wrapper-content aside.profile h1 {
@@ -437,7 +436,6 @@ div.wrapper-content aside.profile li:first-child {
 div.wrapper-content .timeline {
   flex: 1;
   background: var(--secondary-color);
-  margin: 3rem 2rem 0;
 }
 
 div.wrapper-content .timeline ul li {
@@ -534,9 +532,6 @@ div.wrapper-content aside.widgets .widget img {
     margin-top: 0;
     align-self: center;
     order: 1;
-    width: 16rem;
-    height: 16rem;
-
   }
 
   div.wrapper-content aside.profile p {
@@ -580,6 +575,10 @@ div.wrapper-content aside.widgets .widget img {
 @media(max-width: 720px){
   .widget {
     margin: 0.5rem 1rem 0;
+  }
+
+  div.bar .content {
+    justify-content: space-around;
   }
 
 }
