@@ -94,6 +94,11 @@ header#main-header nav ul li {
   margin-left: 3rem;
 }
 
+header#main-header nav ul li:first-child {
+  margin-left: 0;
+}
+
+
 header#main-header nav ul li a {
   display: flex;
 }
@@ -110,9 +115,7 @@ header#main-header div.side {
   margin: 0 auto;
 }
 
-header#main-header div.side button, p {
-  margin: 0 1.5rem;
-}
+
 
 header#main-header div.side button {
   height: 4rem;
@@ -186,10 +189,13 @@ div.banner {
   height: 70vh;
   width: 100%;
   background: var(--primary-color);
-
+  padding-top: 20vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+
+div.banner {
+  
 }
 
 .intro-banner {
@@ -200,9 +206,6 @@ div.banner {
   background-color: var(--terciary-color);
 }
 
-div.banner h1 {
-  margin: 1rem;
-}
 
 div.banner p {
   align-self: flex-start;
@@ -277,10 +280,14 @@ div.bar .content {
   
 }
 
+div.bar .content p {
+  margin-left: 1rem;
+}
+
 div.bar .content ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
 }
@@ -288,7 +295,6 @@ div.bar .content ul {
 div.bar .content ul li {
 
   margin-top: 0.5rem;
-  padding: 0 1.5rem;
 }
 
 div.bar .content ul li button {
@@ -416,19 +422,21 @@ div.wrapper-content aside.profile li:first-child {
 }
 
 .faq {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  max-width: 79.5vw;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
+
 
 .faq h1 {
   font-size: 2rem;
+  margin-bottom: 3rem;
 }
 
 .text {
-  margin: 1rem 0 0 0;
+  margin: 2rem 0 2rem 0;
   text-align: left;
   align-self: baseline;
+  font-weight: 200;
 }
 
 /* wrapper-profile--------------------------------------------*/
@@ -706,10 +714,9 @@ vertical-align: top;
 
 .hidden {
   visibility: hidden;
-  height: 1rem;
+  height: 0;
+  margin-top: -1.5rem;
 }
-
-
 
 /*Form*/
 
@@ -728,6 +735,23 @@ form {
   flex-direction: column;
   background-color: var(--secondary-color);
   color: var(--letter-color);
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.placeholder-font::-webkit-input-placeholder {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.placeholder-font:-ms-input-placeholder {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.placeholder-font:-moz-placeholder {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.placeholder-font::-moz-placeholder {
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 .form-reverse {
@@ -766,6 +790,7 @@ form div {
   visibility: hidden;
   position: absolute;
   height: 0;
+  width: 1px;
 }
 
 textarea {
@@ -824,6 +849,7 @@ textarea {
 	top: 3.5rem;
   z-index: 1;
   margin-top: 1rem;
+  display: no;
 }
 
 .side:hover ul#submenu {

@@ -6,7 +6,8 @@
   <title>Leo Daumas</title>
   <link rel="shortcut icon" href="images/favicon.png" />
   <link rel="stylesheet" href="index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
   <script>document.documentElement.classList.add("js");</script>
 </head>
 <body >
@@ -40,7 +41,7 @@
     </div>
     </div>
   </header>
-  <div data-anime="1000" class="fadeInDown banner">
+  <div data-anime="1000" class="fadeInDown banner content">
     <div class="intro-banner">
       <h1 data-anime="1100" class="fadeInDown">Web Developer</h1>
       <p data-anime="1200" class="fadeInDown">Are you planning to get a website that is <spam>Responsive across ALL DEVICIES</spam> with Clean, Professional, and Attractive Design? No need to look any further.</p>
@@ -127,14 +128,14 @@
         <form class="form-layout formphp" method="POST" action="./enviar.php">
           <div class="form-reverse">
             <div>
-              <input class="form-control" name="name" id="name" type="text" value="" placeholder="Name" required>
+              <input class="form-control placeholder-font" name="name" id="name" type="text" value="" placeholder="Name" required>
     
-              <input class="form-control" name="email" id="email" type="email" value="" placeholder="Email" required>
+              <input class="form-control placeholder-font" name="email" id="email" type="email" value="" placeholder="Email" required>
     
               <input class="nao-aparece" name="leaveblank" type="text" placeholder="If u r not a robo leave it blank">
               <input class="nao-aparece" name="dontchange" type="text" value="http://">
     
-              <textarea class="form-message" id="message" name="message" placeholder="Message" required></textarea>
+              <textarea class="form-message placeholder-font" id="message" name="message" placeholder="Message" required></textarea>
             </div>
           </div>
           <input class="button-form" id="enviar" value="Send" type="submit">
