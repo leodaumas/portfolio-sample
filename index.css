@@ -197,6 +197,10 @@ header#main-header div.side button:hover {
     margin: 0;
   }
 
+  .side a {
+    text-align: center;
+  }
+
 }
 
 /* banner--------------------------------------------*/
@@ -487,6 +491,10 @@ div.wrapper-content aside.profile li:first-child {
 
   div.wrapper-content .profile {
     display: none;
+  }
+
+  #text-resume {
+    text-align: center;
   }
 }
 
