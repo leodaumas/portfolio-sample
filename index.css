@@ -327,7 +327,27 @@ div.bar .content ul {
 #social-media-icons {
   position: absolute;
   margin-left: -2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  width: 40.5rem;
+  height: 1rem;
 }
+
+ul#social-media-icons {
+  flex-direction: row;
+}
+
+li#submenu-cv {
+  align-self: baseline;
+}
+
+li#submenu-cv a {
+  text-transform: uppercase;
+  border: 0.3rem solid var(--letter-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  }
 
 #submenu-cv:hover #download-cv {
   opacity: 1;
@@ -339,7 +359,7 @@ div.bar .content ul {
 	opacity: 0;
   position: absolute;
   visibility: hidden;
-	top: 8rem;
+	top: 1.5rem;
   z-index: 1;
   margin-top: 1rem;
   display: no;
@@ -403,7 +423,6 @@ div.bar .content .actions button:hover {
 
   div.bar .content ul {
     flex-direction: column;
-    margin-bottom: 1rem;
     }
 
     div.bar {
@@ -416,6 +435,16 @@ div.bar .content .actions button:hover {
   div.bar {
     height: 90vh;
     }
+
+    #social-media-icons {
+      width: auto;
+    }
+
+
+
+  div.bar .content ul {
+    align-items: center;
+  }
 
   div.bar .content ul li {
     flex-direction: row;
@@ -482,11 +511,27 @@ div.wrapper-content aside.profile li:first-child {
   margin: 0;
 }
 
+.list-info {
+  margin-bottom: 4rem;
+}
+
+.info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
 @media(max-width: 720px) {
 
   div.wrapper-content aside.profile img.avatar {
     width: 20rem;
     height: 20rem;
+  }
+
+
+  .info {
+    align-items: center;
   }
 
   div.wrapper-content .profile {
