@@ -2,8 +2,7 @@ const text = document.querySelectorAll(".text");
 const changeChevron = document.querySelectorAll(".changeChevron");
 const menu = document.querySelector('.menu');
 
-const header = document.querySelector('.stickyMenu');
-const sticky = document.querySelector('.sticky');
+const scrollLine = document.querySelector('.scroll-line');
 
 for (let i = 0; i < changeChevron.length; i++) {
 	changeChevron[i].addEventListener("click", function() {
@@ -26,20 +25,36 @@ if(window.SimpleSlide) {
 }
 // Menu Smartphone
 
-menu.addEventListener('click', function() {
-	this.classList.toggle('open');
-});
+//menu.addEventListener('click', function() {
+///	this.classList.toggle('open');
+//});
 
+// progress-bar 
 
-// Sticky menu
-
-window.onscroll = function() {stickyMenuFunction()};
-
-function stickyMenuFunction() {
-  if (window.pageYOffset > 400) {
-		header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
+function fillScrollLine() {
+  const windowHeight = window.innerHeight;
+  const fullHeight = document.body.clientHeight;
+  const scrolled = window.scrollY;
+  const percentScrolled = (scrolled / (fullHeight - windowHeight) * 100);
+  scrollLine.style.width = percentScrolled + '%';
+  scrollLine.style.width = `${percentScrolled}%` ;
+  
 }
-//
+/*
+function debounce(func, wait = 15, immediate) {
+  var timeout;
+  return function() {
+    var context = this, args = arguments;
+    var later = function() {
+      timeout = null;
+      if (!immediate) func.apply(context, args);
+    };
+    var callNow = immediate && !timeout;
+    clearTimeout(timeout);
+    timeout = setTimeout(later, wait);
+    if (callNow) func.apply(context, args);
+  };
+}
+*/
+
+window.addEventListener('scroll', fillScrollLine);
