@@ -366,7 +366,7 @@ li#submenu-cv a {
   display: no;
 }
 
-#download-cv li:hover {
+#download-cv li:hover, #download-cv li:active {
   background-color: var(--terciary-color);
 }
 
