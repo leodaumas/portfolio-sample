@@ -232,7 +232,7 @@ header#main-header div.side button:hover {
 /* banner--------------------------------------------*/
 
 div.banner {
-  height: 45vh;
+  height: 70vh;
   width: 100%;
   background: var(--primary-color);
   padding-top: 20vh;
@@ -458,6 +458,10 @@ div.bar .content .actions button:hover {
 }
 
 @media(max-width: 720px) {
+
+  div.banner {
+    height: 45vh;
+  }
 
   div.bar {
     height: 80vh;
