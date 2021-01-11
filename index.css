@@ -148,6 +148,18 @@ header#main-header div.side button {
   outline: 0;
 }
 
+.chevron-down {
+  visibility: hidden;
+  position: absolute;
+  bottom: -2rem;
+  right: 50%;
+}
+
+.double-chevron {
+  width: auto;
+  height: 3rem;
+}
+
 div.side a {
   margin: 0 1rem;
 }
@@ -210,6 +222,10 @@ header#main-header div.side button:hover {
 
   .side a {
     text-align: center;
+  }
+
+  .chevron-down {
+    visibility: visible;
   }
 
 }
@@ -445,7 +461,7 @@ div.bar .content .actions button:hover {
 @media(max-width: 720px) {
 
   div.bar {
-    height: 90vh;
+    height: 80vh;
     }
 
     #social-media-icons {
@@ -458,6 +474,11 @@ div.bar .content .actions button:hover {
 
   .intro-banner {
     margin-right: 0;
+    text-align: center;
+  }
+
+  .intro-banner p {
+    text-align: center;
   }
 
   .title-post {
