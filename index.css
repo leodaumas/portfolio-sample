@@ -151,7 +151,7 @@ header#main-header div.side button {
   visibility: hidden;
   position: absolute;
   bottom: -2rem;
-  right: 50%;
+  right: 48%;
 }
 
 .double-chevron {
@@ -303,6 +303,7 @@ div.banner p {
     justify-content: center;
     align-items: center;
   }
+
 
   .banner {
     display: flex;
@@ -460,15 +461,23 @@ div.bar .content .actions button:hover {
 @media(max-width: 720px) {
 
   div.banner {
-    height: 45vh;
+    height: fit-content;
+    padding: 3rem 0 5rem 0;
+  }
+
+  
+  div.banner p {
+    text-align: center;
   }
 
   div.bar {
-    height: 80vh;
+    height: fit-content;
+    padding: 3rem 0 13rem 0;
     }
 
     #social-media-icons {
       width: auto;
+      margin: 0;
     }
 
     .banner {
@@ -598,6 +607,7 @@ div.wrapper-content aside.profile li:first-child {
 
   #text-resume {
     text-align: center;
+    padding-top: 2rem;
   }
 }
 
