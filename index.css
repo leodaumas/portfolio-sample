@@ -39,7 +39,6 @@ body {
 }
 
 .scroll-line {
-  min-width: 3%;
   height: 0.5rem;
   background-color: var(--terciary-color);
   position: fixed;
@@ -233,7 +232,7 @@ header#main-header div.side button:hover {
 /* banner--------------------------------------------*/
 
 div.banner {
-  height: 70vh;
+  height: 45vh;
   width: 100%;
   background: var(--primary-color);
   padding-top: 20vh;
