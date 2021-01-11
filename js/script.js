@@ -25,9 +25,9 @@ if(window.SimpleSlide) {
 }
 // Menu Smartphone
 
-//menu.addEventListener('click', function() {
-///	this.classList.toggle('open');
-//});
+  menu.addEventListener('click', function() {
+    this.classList.toggle('open');
+  });
 
 // progress-bar 
 
