@@ -370,7 +370,7 @@ li#submenu-cv {
   align-self: baseline;
 }
 
-li#submenu-cv a {
+li#submenu-cv {
   text-transform: uppercase;
   border: 0.3rem solid var(--letter-color);
   font-size: 1.3rem;
